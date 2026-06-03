@@ -12,6 +12,6 @@ app.use("/expenses", expenseRoutes);
 mongoose.connect("mongodb://localhost:27017/expense-tracker")
   .then(() => {
     console.log("MongoDB Connected ✅");
-    app.listen(5000, () => console.log("Server running on http://localhost:5000"));
+    app.listen(5000, () => console.log("Server running on https://expense-tracker-server-01d4.onrender.com"));
   })
   .catch(err => console.log(err));
